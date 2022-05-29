@@ -1,0 +1,17 @@
+{
+  "name": "interviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://quannh-netalik.github.io/interviews/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
