@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>General Javascript Interview Coding Exercise - Sleek Interviews</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "General Javascript Interview Coding Exercise";
+    var mkdocs_page_input_path = "js-coding-exercise.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Sleek Interviews</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Welcome to Sleek Interviews</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../backend/">Backend Developer Questions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../frontend/">Frontend Developer Questions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../general-questions/">Interview Format for Full-Stack Developer</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">General Javascript Interview Coding Exercise</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#general-javascript-interview-coding-exercise">General Javascript Interview Coding Exercise</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#what-is-a-callback-function">What is a callback function?</a></li>
+        
+            <li><a class="toctree-l3" href="#create-an-es6-class">Create an ES6 Class</a></li>
+        
+            <li><a class="toctree-l3" href="#what-are-the-differences-between-cookie-local-storage-and-session-storage">What are the differences between cookie, local storage and session storage</a></li>
+        
+            <li><a class="toctree-l3" href="#promise-chaining">Promise Chaining</a></li>
+        
+            <li><a class="toctree-l3" href="#promiseall">Promise.all</a></li>
+        
+            <li><a class="toctree-l3" href="#what-is-the-purpose-of-the-delete-operator">What is the purpose of the delete operator</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../node-mongo/">NodeJS + MongoDb Interview Coding Exercise</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Sleek Interviews</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>General Javascript Interview Coding Exercise</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="general-javascript-interview-coding-exercise">General Javascript Interview Coding Exercise</h1>
+<p><a href="https://github.com/sudheerj/javascript-interview-questions#how-do-you-compare-object-and-map">GitHub - sudheerj/javascript-interview-questions: List of 1000 JavaScript Interview Questions</a></p>
+<h3 id="what-is-a-callback-function">What is a callback function?</h3>
+<blockquote>
+<p>A callback function is a function that is passed to another function as an argument and is executed after some operation has been completed. Below is an example of a simple callback function that logs to the console /after/ some operations have been completed.</p>
+</blockquote>
+<pre><code>1. Make a function called shoutHelloWorld that receives an array and a callback
+2. The array is a list of string [&quot;hello&quot;, &quot;world&quot;]
+3. and the callback function will console.log hello, world
+
+function shoutHelloWorld(arr, callback) {
+  arr = arr.join(&quot;, &quot;);
+  callback(arr);
+}
+
+let arr = [&quot;hello&quot;, &quot;world&quot;];
+
+shoutHelloWorld(arr, function(arr) {
+  console.log(arr);
+});
+</code></pre>
+
+<h3 id="create-an-es6-class">Create an ES6 Class</h3>
+<pre><code>1. name the class Person
+2. properties are first_name and last_name
+3. provide a method called getFullName and should return My full name is $first_name $last_name
+
+class Person{
+  constructor(first_name, last_name) {
+    this.first_name = first_name;
+    this.last_name= last_name;
+  }
+
+  getFullName() {
+    return `My full name is ${this.first_name} ${this.last_name}`;
+  }
+}
+
+// Usage
+let aPerson = new Person(&quot;a&quot;, &quot;b&quot;);
+aPerson.getFullName();
+</code></pre>
+
+<h3 id="what-are-the-differences-between-cookie-local-storage-and-session-storage">What are the differences between cookie, local storage and session storage</h3>
+<p>[image:FC75C253-304C-4118-9D40-3F0FEF43ECFC-44737-000062E6D8DD3235/Screen Shot 2021-04-29 at 9.46.08 AM.png]</p>
+<h3 id="promise-chaining">Promise Chaining</h3>
+<blockquote>
+<p>The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let’s take an example of promise chaining for calculating the final result,</p>
+</blockquote>
+<pre><code>new Promise(function(resolve, reject) {
+
+  setTimeout(() =&gt; resolve(1), 1000);
+
+}).then(function(result) {
+
+  console.log(result); // 1
+  return result * 2;
+
+}).then(function(result) {
+
+  console.log(result); // 2
+  return result * 3;
+
+}).then(function(result) {
+
+  console.log(result); // 6
+  return result * 4;
+
+});
+
+</code></pre>
+
+<blockquote>
+<p>In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
+* The initial promise resolves in 1 second,
+* After that .then handler is called by logging the result(1) and then return a promise with the value of result * 2.
+* After that the value passed to the next .then handler by logging the result(2) and return a promise with result * 3.
+* Finally the value passed to the last .then handler by logging the result(6) and return a promise with result * 4.</p>
+</blockquote>
+<h3 id="promiseall">Promise.all</h3>
+<blockquote>
+<p>Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,</p>
+<p><em>Note:</em> Remember that the order of the promises(output the result) is maintained as per input order.</p>
+</blockquote>
+<pre><code>Promise.all([Promise1, Promise2, Promise3]) .then(result) =&gt; {   console.log(result) }) .catch(error =&gt; console.log(`Error in promises ${error}`))
+</code></pre>
+
+<h3 id="what-is-the-purpose-of-the-delete-operator">What is the purpose of the delete operator</h3>
+<pre><code>// How do you call use &quot;name&quot; by destructuring
+let user= {name: &quot;John&quot;, age:20};
+let { name } = user;
+delete user.age;
+
+console.log(user); // {name: &quot;John&quot;}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../node-mongo/" class="btn btn-neutral float-right" title="NodeJS + MongoDb Interview Coding Exercise">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../general-questions/" class="btn btn-neutral" title="Interview Format for Full-Stack Developer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../general-questions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../node-mongo/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

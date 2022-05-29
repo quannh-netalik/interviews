@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Backend Developer Questions - Sleek Interviews</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Backend Developer Questions";
+    var mkdocs_page_input_path = "backend.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Sleek Interviews</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Welcome to Sleek Interviews</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Backend Developer Questions</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#backend-developer-questions">Backend Developer Questions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#what-rest-stands-for">What REST stands for?</a></li>
+        
+            <li><a class="toctree-l3" href="#what-are-nosql-databases">What are NoSQL databases?</a></li>
+        
+            <li><a class="toctree-l3" href="#what-are-the-advantages-disadvatage-when-using-a-nosql-database">What are the advantages / disadvatage when using a NoSQL database?</a></li>
+        
+            <li><a class="toctree-l3" href="#what-is-sql-injection">What is SQL injection?</a></li>
+        
+            <li><a class="toctree-l3" href="#how-to-prevent">How to prevent?</a></li>
+        
+            <li><a class="toctree-l3" href="#how-do-you-understand-the-term-high-availability-ha">How do you understand the term High Availability (HA)?</a></li>
+        
+            <li><a class="toctree-l3" href="#compare-sql-databases-and-mongodb-at-a-high-level">Compare SQL databases and MongoDB at a high level</a></li>
+        
+            <li><a class="toctree-l3" href="#when-to-redis">When to Redis?</a></li>
+        
+            <li><a class="toctree-l3" href="#why-would-you-opt-for-microservices-architecture">Why Would You Opt For Microservices Architecture?</a></li>
+        
+            <li><a class="toctree-l3" href="#what-is-the-difference-between-monolithic-soa-and-microservices-architecture">What is the difference between Monolithic, SOA and Microservices Architecture?</a></li>
+        
+            <li><a class="toctree-l3" href="#how-would-you-implement-a-sso-in-a-microservice-architecture">How would you implement a SSO in a Microservice Architecture?</a></li>
+        
+            <li><a class="toctree-l3" href="#explain-what-the-api-gateway-pattern-means">Explain what the API Gateway pattern means?</a></li>
+        
+            <li><a class="toctree-l3" href="#whats-the-difference-between-faking-mocking-and-stubbing">What's the difference between faking, mocking, and stubbing?</a></li>
+        
+            <li><a class="toctree-l3" href="#what-are-the-qualities-any-good-backend-developer-must-possess">What are the qualities any good backend developer must possess?</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../frontend/">Frontend Developer Questions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../general-questions/">Interview Format for Full-Stack Developer</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../js-coding-exercise/">General Javascript Interview Coding Exercise</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../node-mongo/">NodeJS + MongoDb Interview Coding Exercise</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Sleek Interviews</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Backend Developer Questions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="backend-developer-questions">Backend Developer Questions</h1>
+<h3 id="what-rest-stands-for"><em>What REST stands for?</em></h3>
+<blockquote>
+<p>REST stands for REpresentational State Transfer. REST is web standards based architecture and uses HTTP Protocol for data communication. It revolves around resource where every component is a resource and a resource is accessed by a common interface using HTTP standard methods. REST was first introduced by Roy Fielding in 2000.</p>
+</blockquote>
+<h3 id="what-are-nosql-databases"><em>What are NoSQL databases?</em></h3>
+<blockquote>
+<p>A NoSQL database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases (like SQL, Oracle, etc.).</p>
+</blockquote>
+<h3 id="what-are-the-advantages-disadvatage-when-using-a-nosql-database"><em>What are the advantages / disadvatage when using a NoSQL database?</em></h3>
+<h3 id="what-is-sql-injection"><em>What is SQL injection?</em></h3>
+<blockquote>
+<p>Injection attacks stem from a lack of strict separation between program instructions (i.e., code) and user-provided (or external) input. This allows an attacker to inject malicious code into a data snippet.</p>
+</blockquote>
+<h3 id="how-to-prevent"><em>How to prevent?</em></h3>
+<ul>
+<li>Prepared statements with parameterized queries</li>
+<li>Stored procedures</li>
+<li>Input validation - blacklist validation and whitelist validation</li>
+<li>Principle of least privilege - Application accounts shouldn’t assign DBA or admin type access onto the database server. This ensures that if an application is compromised, an attacker won’t have the rights to the database through the compromised application.</li>
+</ul>
+<h3 id="how-do-you-understand-the-term-high-availability-ha"><em>How do you understand the term High Availability (HA)?</em></h3>
+<ul>
+<li>
+<p>Accessibility means the ability of the user of the program to gain access to the system. If the user cannot access the program, then it is considered unavailable.</p>
+</li>
+<li>
+<p>High availability also means that the program will be available to users without interruption. Using redundant server nodes with clustering is a common way of higher availability in web applications. Availability is also commonly expressed as a percentage of uptime in a given year.</p>
+</li>
+</ul>
+<h3 id="compare-sql-databases-and-mongodb-at-a-high-level"><em>Compare SQL databases and MongoDB at a high level</em></h3>
+<ul>
+<li>SQL databases store data in form of tables, rows, columns and records. This data is stored in a pre-defined data model which is not very much flexible for today's real-world highly growing applications. MongoDB in contrast uses a flexible structure which can be easily modified and extended.</li>
+</ul>
+<h3 id="when-to-redis"><em>When to Redis?</em></h3>
+<blockquote>
+<p>Redis is an in-memory, persistent data structure store that should be used to enable the performance of common operations with minimal complexity and maximum performance.</p>
+</blockquote>
+<h3 id="why-would-you-opt-for-microservices-architecture"><em>Why Would You Opt For Microservices Architecture?</em></h3>
+<p>There are plenty of pros that are offered by Microservices architecture. Here are a few of them:</p>
+<ul>
+<li>Microservices can adapt easily to other frameworks or technologies.</li>
+<li>Failure of a single process does not affect the entire system.</li>
+<li>Provides support to big enterprises as well as small teams.</li>
+<li>Can be deployed independently and in relatively less time.</li>
+</ul>
+<h3 id="what-is-the-difference-between-monolithic-soa-and-microservices-architecture"><em>What is the difference between Monolithic, SOA and Microservices Architecture?</em></h3>
+<blockquote>
+<ul>
+<li>
+<p>Monolithic Architecture is similar to a big container wherein all the software components of an application are assembled together and tightly packaged.</p>
+</li>
+<li>
+<p>A Service-Oriented Architecture is a collection of services which communicate with each other. The communication can involve either simple data passing or it could involve two or more services coordinating some activity.</p>
+</li>
+<li>
+<p>Microservice Architecture is an architectural style that structures an application as a collection of small autonomous services, modeled around a business domain.</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="how-would-you-implement-a-sso-in-a-microservice-architecture"><em>How would you implement a SSO in a Microservice Architecture?</em></h3>
+<h3 id="explain-what-the-api-gateway-pattern-means"><em>Explain what the API Gateway pattern means?</em></h3>
+<blockquote>
+<p>An API Gateway is a server that is the only possible entry point to the system. It is similar to the Facade pattern from object-oriented design. API Gateway encapsulates the architecture of the entire system and provides an API that is already adapted for each client. This API can also have other functions such as authentication, caching, monitoring, and load balancing.</p>
+</blockquote>
+<h3 id="whats-the-difference-between-faking-mocking-and-stubbing"><em>What's the difference between faking, mocking, and stubbing?</em></h3>
+<blockquote>
+<ul>
+<li>
+<p>Stub - an object that provides predefined answers to method calls.</p>
+</li>
+<li>
+<p>Mock - an object on which you set expectations.</p>
+</li>
+<li>
+<p>Fake - an object with limited capabilities (for the purposes of testing), e.g. a fake web service.</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="what-are-the-qualities-any-good-backend-developer-must-possess">What are the qualities any good backend developer must possess?</h3>
+<ol>
+<li>In-depth knowledge of server programming languages like Python, Ruby, Java, Perl</li>
+<li>Great acquaintance with NoSQL and RDBMS</li>
+<li>Good understanding of front-end technologies (easy to work with frontend developers)</li>
+<li>Basic understanding of cloud deployments</li>
+<li>Ability to develop business logic within any app</li>
+<li>Ability to easily create functional APIs</li>
+<li>Design of service architecture</li>
+<li>Ability to optimize web applications</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../frontend/" class="btn btn-neutral float-right" title="Frontend Developer Questions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Welcome to Sleek Interviews"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../frontend/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
